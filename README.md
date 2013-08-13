@@ -32,7 +32,7 @@ And navigate to [http://localhost:3000/](http://localhost:3000/)
 
 ### Source code for the examples:
 
-`src-cljs/main.cljs` as well as the templates `coreasync-1.html` and `coreasync-1.html`
+`src-cljs/main.cljs` as well as the templates `coreasync-1.html` and `coreasync-2.html`
 
 Example 2 has a pure javascript for comparison purposes at `js-core-async.js` 
 
