@@ -1,11 +1,9 @@
 (ns core-async-intro.handler
   (:require [compojure.core :refer [defroutes]]
-            [core-async-intro.routes.auth :refer [auth-routes]]
             [core-async-intro.routes.home :refer [home-routes]]
             [noir.util.middleware :as middleware]
             [noir.session :as session]
             [compojure.route :as route]
-            [core-async-intro.models.schema :as schema]
             [taoensso.timbre :as timbre]
             [com.postspectacular.rotor :as rotor]
             [core-async-intro.routes.cljsexample :refer [cljs-routes]]))
@@ -31,7 +29,6 @@
     {:path "core_async_intro.log",
      :max-size (* 512 1024),
      :backlog 10})
-  (if-not (schema/initialized?) (schema/create-tables))
   (timbre/info "core-async-intro started successfully"))
 
 (defn destroy
@@ -42,7 +39,7 @@
 
 (def app
  (middleware/app-handler
-   [cljs-routes auth-routes home-routes app-routes]
+   [cljs-routes home-routes app-routes]
    :middleware
    []
    :access-rules

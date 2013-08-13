@@ -1,11 +1,9 @@
-### Here are some links to get started
+### Some core.async links
 
-1. [HTML templating](http://www.luminusweb.net/docs/html_templating.md)
-2. [Accessing the database](http://www.luminusweb.net/docs/database.md)
-3. [Serving static resources](http://www.luminusweb.net/docs/static_resources.md)
-4. [Setting response types](http://www.luminusweb.net/docs/responses.md)
-5. [Defining routes](http://www.luminusweb.net/docs/routes.md)
-6. [Adding middleware](http://www.luminusweb.net/docs/middleware.md)
-7. [Sessions and cookies](http://www.luminusweb.net/docs/sessions_cookies.md)
-8. [Security](http://www.luminusweb.net/docs/security.md)
-9. [Deploying the application](http://www.luminusweb.net/docs/deployment.md)
+1. [Clojure, core.async and the Lisp advantage](http://www.leonardoborges.com/writings/2013/07/06/clojure-core-dot-async-lisp-advantage/)
+2. [Clojure core.async Channels](http://clojure.com/blog/2013/06/28/clojure-core-async-channels.html)
+3. [Communicating Sequential Processes](http://swannodette.github.io/2013/07/12/communicating-sequential-processes/)
+4. [core.async and blocking IO](http://martintrojer.github.io/clojure/2013/07/07/coreasync-and-blocking-io/)
+5. [Escaping callback hell with core.async](http://bryangilbert.com/code/2013/07/19/escaping-callback-hell-with-core-async/)
+6. [Rich Hickey on core.async podcast](http://thinkrelevance.com/blog/2013/07/10/rich-hickey-and-core-async-podcast-episode-035)
+7. [Slides for this preso](http://www.slideshare.net/borgesleonardo/intro-to-clojures-coreasync)
