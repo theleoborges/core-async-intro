@@ -1,4 +1,4 @@
-(ns luminus-bootstrap-cljs-h2-site.util
+(ns core-async-intro.util
   (:require [noir.io :as io]
             [markdown.core :as md]))
 

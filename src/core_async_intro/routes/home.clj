@@ -1,7 +1,7 @@
-(ns luminus-bootstrap-cljs-h2-site.routes.home
+(ns core-async-intro.routes.home
   (:use compojure.core)
-  (:require [luminus-bootstrap-cljs-h2-site.views.layout :as layout]
-            [luminus-bootstrap-cljs-h2-site.util :as util]))
+  (:require [core-async-intro.views.layout :as layout]
+            [core-async-intro.util :as util]))
 
 (defn home-page []
   (layout/render

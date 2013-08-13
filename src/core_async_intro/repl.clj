@@ -1,5 +1,5 @@
-(ns luminus-bootstrap-cljs-h2-site.repl
-  (:use luminus-bootstrap-cljs-h2-site.handler
+(ns core-async-intro.repl
+  (:use core-async-intro.handler
         ring.server.standalone
         [ring.middleware file-info file]))
 

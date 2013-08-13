@@ -1,14 +1,14 @@
-(ns luminus-bootstrap-cljs-h2-site.handler
+(ns core-async-intro.handler
   (:require [compojure.core :refer [defroutes]]
-            [luminus-bootstrap-cljs-h2-site.routes.auth :refer [auth-routes]]
-            [luminus-bootstrap-cljs-h2-site.routes.home :refer [home-routes]]
+            [core-async-intro.routes.auth :refer [auth-routes]]
+            [core-async-intro.routes.home :refer [home-routes]]
             [noir.util.middleware :as middleware]
             [noir.session :as session]
             [compojure.route :as route]
-            [luminus-bootstrap-cljs-h2-site.models.schema :as schema]
+            [core-async-intro.models.schema :as schema]
             [taoensso.timbre :as timbre]
             [com.postspectacular.rotor :as rotor]
-            [luminus-bootstrap-cljs-h2-site.routes.cljsexample :refer [cljs-routes]]))
+            [core-async-intro.routes.cljsexample :refer [cljs-routes]]))
 
 (defroutes
   app-routes
@@ -32,13 +32,13 @@
      :max-size (* 512 1024),
      :backlog 10})
   (if-not (schema/initialized?) (schema/create-tables))
-  (timbre/info "luminus-bootstrap-cljs-h2-site started successfully"))
+  (timbre/info "core-async-intro started successfully"))
 
 (defn destroy
   "destroy will be called when your application
    shuts down, put any clean up code here"
   []
-  (timbre/info "luminus-bootstrap-cljs-h2-site is shutting down..."))
+  (timbre/info "core-async-intro is shutting down..."))
 
 (def app
  (middleware/app-handler

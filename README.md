@@ -1,4 +1,4 @@
-# luminus-bootstrap-cljs-h2-site
+# core-async-intro
 
 FIXME
 

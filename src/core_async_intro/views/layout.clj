@@ -1,4 +1,4 @@
-(ns luminus-bootstrap-cljs-h2-site.views.layout
+(ns core-async-intro.views.layout
   (:use noir.request)
   (:require [clabango.parser :as parser]
             [noir.session :as session]))

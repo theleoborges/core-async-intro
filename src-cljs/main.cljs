@@ -1,4 +1,4 @@
-(ns luminus-bootstrap-cljs-h2-site.main
+(ns core-async-intro.main
   (:require [ajax.core :refer [GET POST]] 
             [domina :refer [value by-id destroy-children! append! set-html!]]
             [domina.events :refer [listen!]]

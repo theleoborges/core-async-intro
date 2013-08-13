@@ -1,11 +1,11 @@
-(ns luminus-bootstrap-cljs-h2-site.routes.auth
+(ns core-async-intro.routes.auth
   (:use compojure.core)
-  (:require [luminus-bootstrap-cljs-h2-site.views.layout :as layout]
+  (:require [core-async-intro.views.layout :as layout]
             [noir.session :as session]
             [noir.response :as resp]
             [noir.validation :as vali]
             [noir.util.crypt :as crypt]
-            [luminus-bootstrap-cljs-h2-site.models.db :as db]))
+            [core-async-intro.models.db :as db]))
 
 (defn valid? [id pass pass1]
   (vali/rule (vali/has-value? id)

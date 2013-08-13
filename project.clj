@@ -1,5 +1,5 @@
 (defproject
-  luminus-bootstrap-cljs-h2-site
+  core-async-intro
   "0.1.0-SNAPSHOT"
   :dependencies
   [[org.clojure/clojure "1.5.1"]
@@ -36,9 +36,9 @@
       :optimizations :whitespace
       :pretty-print true}}]}
   :ring
-  {:handler luminus-bootstrap-cljs-h2-site.handler/war-handler,
-   :init luminus-bootstrap-cljs-h2-site.handler/init,
-   :destroy luminus-bootstrap-cljs-h2-site.handler/destroy}
+  {:handler core-async-intro.handler/war-handler,
+   :init core-async-intro.handler/init,
+   :destroy core-async-intro.handler/destroy}
   :profiles
   {:production
    {:ring
