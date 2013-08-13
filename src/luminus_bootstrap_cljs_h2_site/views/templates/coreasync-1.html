@@ -1,0 +1,21 @@
+
+{% extends "luminus_bootstrap_cljs_h2_site/views/templates/base.html" %}
+
+
+
+{% block content %}
+
+
+<br/>
+<div id="results"></div>
+<button id="search">Search</button>
+<br/>
+
+<!--  scripts -->
+<script type="text/javascript" src="js/site.js"></script>
+<script type="text/javascript">
+	luminus_bootstrap_cljs_h2_site.main.search("Clojure");
+</script>
+
+{% endblock %}
+

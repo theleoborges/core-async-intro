@@ -1,0 +1,24 @@
+
+{% extends "luminus_bootstrap_cljs_h2_site/views/templates/base.html" %}
+
+
+
+{% block content %}
+
+
+<br/>
+<div id="messages"></div>
+<div id="messages1"></div>
+
+<br/>
+
+<!--  scripts -->
+<script type="text/javascript" src="js/site.js"></script>
+<script type="text/javascript" src="js/js-core-async.js"></script>
+<script type="text/javascript">
+	luminus_bootstrap_cljs_h2_site.main.init();
+        renderValues([]);
+</script>
+
+{% endblock %}
+
