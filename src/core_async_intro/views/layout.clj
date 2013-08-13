@@ -3,7 +3,7 @@
   (:require [clabango.parser :as parser]
             [noir.session :as session]))
 
-(def template-path "luminus_bootstrap_cljs_h2_site/views/templates/")
+(def template-path "core_async_intro/views/templates/")
 
 (defn render [template & [params]]
   (parser/render-file (str template-path template)

@@ -28,7 +28,7 @@
      :fn rotor/append})
   (timbre/set-config!
     [:shared-appender-config :rotor]
-    {:path "luminus_bootstrap_cljs_h2_site.log",
+    {:path "core_async_intro.log",
      :max-size (* 512 1024),
      :backlog 10})
   (if-not (schema/initialized?) (schema/create-tables))

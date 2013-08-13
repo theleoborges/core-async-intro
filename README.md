@@ -1,6 +1,6 @@
 # core-async-intro
 
-FIXME
+[presentation](http://www.slideshare.net/borgesleonardo/intro-to-clojures-coreasync)
 
 ## Prerequisites
 
